@@ -5,21 +5,9 @@ pipeline {
         stage('push') {
             steps {
                 echo 'Hello World'
-            }
-        }
-        stage('build'){
-            steps{
-                echo 'build stage'
-            }
-        }
-        stage('test'){
-            steps{
-                echo 'test stage'
-            }
-        }
-        stage('deploy'){
-            steps{
-                echo 'deploy stage'
+                echo "rama de git ${env.BRANCH_NAME}
+                echo 'rama' + env.BRANCH_NAME
+         
             }
         }
     }
