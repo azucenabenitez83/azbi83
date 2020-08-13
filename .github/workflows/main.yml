@@ -1,7 +1,7 @@
 
-name: Docker
+name: Testing Docker Image
 
-on: push
+on: [push]
   
 jobs:
   build:
